@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "angular-resize-element": [
+        "dist/angular-resize-element"
+      ],
+      "angular-resize-element/*": [
+        "dist/angular-resize-element/*"
+      ]
+    }
   }
 }
