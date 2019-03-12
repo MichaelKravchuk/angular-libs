@@ -1,8 +1,21 @@
 {
-  "name": "angular-resize-element",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
-  }
+    "name": "angular-resize-element",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MichaelKravchuk/angular-resize-element.git"
+    },
+    "peerDependencies": {
+        "@angular/common": "^7.2.0",
+        "@angular/core": "^7.2.0"
+    },
+    "license": "MIT",
+    "keywords": [
+        "angular-resize-element",
+        "resize",
+        "resizing",
+        "rescale element",
+        "resize-element",
+        "change size"
+    ]
 }

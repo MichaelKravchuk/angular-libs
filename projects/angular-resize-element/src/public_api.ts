@@ -3,5 +3,7 @@
  */
 
 export * from './lib/angular-resize-element.service';
-export * from './lib/angular-resize-element.component';
+export * from './lib/angular-resize-element.directive';
 export * from './lib/angular-resize-element.module';
+export * from './lib/angular-resize-element-event.interface';
+export * from './lib/angular-resize-element.enum';

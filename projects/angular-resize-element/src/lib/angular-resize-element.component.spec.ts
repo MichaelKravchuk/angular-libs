@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularResizeElementComponent } from './angular-resize-element.component';
+import { AngularResizeElementDirective } from './angular-resize-element.directive';
 
 describe('AngularResizeElementComponent', () => {
-  let component: AngularResizeElementComponent;
-  let fixture: ComponentFixture<AngularResizeElementComponent>;
+  let component: AngularResizeElementDirective;
+  let fixture: ComponentFixture<AngularResizeElementDirective>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AngularResizeElementComponent ]
+      declarations: [ AngularResizeElementDirective ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AngularResizeElementComponent);
+    fixture = TestBed.createComponent(AngularResizeElementDirective);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
