@@ -3,6 +3,9 @@
 An angular 4.0+ directive that allows an element to be resized
 
 
+## Demo
+https://michaelkravchuk.github.io/angular-libs/resize-element
+
 ## Usage
 
 **Step 1:** Install angular-resize-element
