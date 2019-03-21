@@ -1,3 +1,5 @@
+import {AngularResizeElementDirection} from './angular-resize-element.enum';
+
 export interface AngularResizeElementEvent {
     currentWidthValue: number;
     currentHeightValue: number;
@@ -6,4 +8,5 @@ export interface AngularResizeElementEvent {
     differenceWidthValue: number;
     differenceHeightValue: number;
     originalEvent: MouseEvent;
+    direction: AngularResizeElementDirection;
 }

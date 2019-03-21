@@ -1,0 +1,11 @@
+<mat-drawer-container autosize>
+    <header-layout [drawer]="drawer"></header-layout>
+
+    <mat-drawer #drawer class="sidenav" mode="over">
+        <sidenav [drawer]="drawer"></sidenav>
+    </mat-drawer>
+
+    <div class="mc">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

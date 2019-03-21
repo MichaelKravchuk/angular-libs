@@ -1,0 +1,49 @@
+.c-top-block {
+    height: 200px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //background: #3f51b5;
+
+    .title {
+        opacity: 0.6;
+        font-size: 24px;
+    }
+
+    .user-name {
+        font-size: 16px;
+    }
+}
+
+.c-nav-block {
+
+    .item {
+        display: block;
+        text-decoration: none;
+        font-size: 21px;
+        padding-left: 60px;
+        margin: 34px 0;
+        color: black;
+        outline: none;
+        cursor: pointer;
+
+        &.logout {
+            position: relative;
+
+            mat-icon {
+                position: absolute;
+                left: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.h-line {
+    height: 1px;
+    background: rgba(0, 0, 0, .42);
+}

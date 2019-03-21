@@ -1,0 +1,86 @@
+<resized-element class="resize-container top-left" [style.width.px]="data[0].width" [style.height.px]="data[0].height">
+    <div class="resize resize__right"
+         (resize)="onResize($event, data[0])"
+         [targetElement]="containerElements[0]"
+         [direction]="AngularResizeElementDirection.RIGHT"
+    ></div>
+
+    <div class="resize resize__bottom--right"
+         (resize)="onResize($event, data[0])"
+         [targetElement]="containerElements[0]"
+         [direction]="AngularResizeElementDirection.BOTTOM_RIGHT"
+    ></div>
+
+    <div class="resize resize__bottom"
+         (resize)="onResize($event, data[0])"
+         [targetElement]="containerElements[0]"
+         [direction]="AngularResizeElementDirection.BOTTOM"
+    ></div>
+</resized-element>
+
+
+
+<resized-element class="resize-container top-right" [style.width.px]="data[1].width" [style.height.px]="data[1].height">
+    <div class="resize resize__bottom"
+         (resize)="onResize($event, data[1])"
+         [targetElement]="containerElements[1]"
+         [direction]="AngularResizeElementDirection.BOTTOM"
+    ></div>
+
+    <div class="resize resize__bottom--left"
+         (resize)="onResize($event, data[1])"
+         [targetElement]="containerElements[1]"
+         [direction]="AngularResizeElementDirection.BOTTOM_LEFT"
+    ></div>
+
+    <div class="resize resize__left"
+         (resize)="onResize($event, data[1])"
+         [targetElement]="containerElements[1]"
+         [direction]="AngularResizeElementDirection.LEFT"
+    ></div>
+</resized-element>
+
+
+
+<resized-element class="resize-container bottom-right" [style.width.px]="data[2].width" [style.height.px]="data[2].height">
+    <div class="resize resize__top"
+         (resize)="onResize($event, data[2])"
+         [targetElement]="containerElements[2]"
+         [direction]="AngularResizeElementDirection.TOP"
+    ></div>
+
+    <div class="resize resize__left"
+         (resize)="onResize($event, data[2])"
+         [targetElement]="containerElements[2]"
+         [direction]="AngularResizeElementDirection.LEFT"
+    ></div>
+
+    <div class="resize resize__top--left"
+         (resize)="onResize($event, data[2])"
+         [targetElement]="containerElements[2]"
+         [direction]="AngularResizeElementDirection.TOP_LEFT"
+    ></div>
+</resized-element>
+
+
+
+
+<resized-element class="resize-container bottom-left" [style.width.px]="data[3].width" [style.height.px]="data[3].height">
+    <div class="resize resize__top"
+         (resize)="onResize($event, data[3])"
+         [targetElement]="containerElements[3]"
+         [direction]="AngularResizeElementDirection.TOP"
+    ></div>
+
+    <div class="resize resize__top--right"
+         (resize)="onResize($event, data[3])"
+         [targetElement]="containerElements[3]"
+         [direction]="AngularResizeElementDirection.TOP_RIGHT"
+    ></div>
+    <div class="resize resize__right"
+         (resize)="onResize($event, data[3])"
+         [targetElement]="containerElements[3]"
+         [direction]="AngularResizeElementDirection.RIGHT"
+    ></div>
+</resized-element>
+

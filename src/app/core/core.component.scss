@@ -1,0 +1,23 @@
+:host {
+    display: block;
+    padding-top: 50px;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+mat-drawer-container {
+    height: 100%;
+}
+
+.mc {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.sidenav {
+    position: fixed;
+    width: 320px;
+}

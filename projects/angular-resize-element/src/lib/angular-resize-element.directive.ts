@@ -88,13 +88,10 @@ export class AngularResizeElementDirective {
         this.originalEvent = originalEvent;
 
         if (this.targetElement) {
-            if (this.targetElement instanceof ElementRef) {
-                this.targetElementWidthValue = this.targetElement.nativeElement.offsetWidth;
-                this.targetElementHeightValue = this.targetElement.nativeElement.offsetHeight;
-            } else {
-                this.targetElementWidthValue = this.targetElement.offsetWidth;
-                this.targetElementHeightValue = this.targetElement.offsetHeight;
-            }
+            const dataSource = this.targetElement instanceof ElementRef ? this.targetElement.nativeElement : this.targetElement;
+            this.targetElementWidthValue = dataSource.offsetWidth;
+            this.targetElementHeightValue = dataSource.offsetHeight;
+
         } else {
             this.targetElementWidthValue = 0;
             this.targetElementHeightValue = 0;
@@ -111,21 +108,12 @@ export class AngularResizeElementDirective {
         let currentHeightValue = evt.clientY - originalYValue;
 
         switch (this.direction) {
-            case AngularResizeElementDirection.TOP: {
-                currentHeightValue *= -1;
-                break;
-            }
+            case AngularResizeElementDirection.TOP:
             case AngularResizeElementDirection.TOP_RIGHT: {
                 currentHeightValue *= -1;
                 break;
             }
-            case AngularResizeElementDirection.RIGHT: { break; }
-            case AngularResizeElementDirection.BOTTOM_RIGHT: { break; }
-            case AngularResizeElementDirection.BOTTOM: { break; }
-            case AngularResizeElementDirection.BOTTOM_LEFT: {
-                currentWidthValue *= -1;
-                break;
-            }
+            case AngularResizeElementDirection.BOTTOM_LEFT:
             case AngularResizeElementDirection.LEFT: {
                 currentWidthValue *= -1;
                 break;
@@ -133,6 +121,19 @@ export class AngularResizeElementDirective {
             case AngularResizeElementDirection.TOP_LEFT: {
                 currentHeightValue *= -1;
                 currentWidthValue *= -1;
+                break;
+            }
+        }
+
+        switch (this.direction) {
+            case AngularResizeElementDirection.TOP:
+            case AngularResizeElementDirection.BOTTOM: {
+                currentWidthValue = 0;
+                break;
+            }
+            case AngularResizeElementDirection.RIGHT:
+            case AngularResizeElementDirection.LEFT: {
+                currentHeightValue = 0;
                 break;
             }
         }
@@ -156,6 +157,7 @@ export class AngularResizeElementDirective {
             originalHeightValue: this.targetElementHeightValue,
             differenceWidthValue: this.targetElementWidthValue - currentWidthValue,
             differenceHeightValue: this.targetElementHeightValue - currentHeightValue,
+            direction: this.direction,
         };
     }
 }

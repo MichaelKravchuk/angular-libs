@@ -1,6 +1,6 @@
 {
     "name": "angular-resize-element",
-    "version": "0.1.0",
+    "version": "1.0.9",
     "repository": {
         "type": "git",
         "url": "https://github.com/MichaelKravchuk/angular-resize-element.git"
@@ -11,11 +11,13 @@
     },
     "license": "MIT",
     "keywords": [
-        "angular-resize-element",
+        "angular",
+        "angular2",
+        "angular4",
+        "angular5",
+        "angular6",
         "resize",
         "resizing",
-        "rescale element",
-        "resize-element",
-        "change size"
+        "rescale"
     ]
 }

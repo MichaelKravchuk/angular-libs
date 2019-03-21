@@ -1,6 +1,6 @@
 # Angular-Resize-Element
 
-angular-resize-element is a Angular Module for resizing your components.
+An angular 4.0+ directive that allows an element to be resized
 
 
 ## Usage
