@@ -84,3 +84,61 @@
     ></div>
 </resized-element>
 
+
+<resized-element class="resize-container center"
+                 [style.width.px]="data[4].width"
+                 [style.height.px]="data[4].height"
+                 [style.top.px]="data[4].top"
+                 [style.left.px]="data[4].left"
+>
+    <div class="resize resize__right"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.RIGHT"
+    ></div>
+
+    <div class="resize resize__bottom--right"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.BOTTOM_RIGHT"
+    ></div>
+
+    <div class="resize resize__bottom"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.BOTTOM"
+    ></div>
+
+    <div class="resize resize__top"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.TOP"
+    ></div>
+
+    <div class="resize resize__left"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.LEFT"
+    ></div>
+
+
+    <div class="resize resize__top--right"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.TOP_RIGHT"
+    ></div>
+
+    <div class="resize resize__bottom--left"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.BOTTOM_LEFT"
+    ></div>
+
+    <div class="resize resize__top--left"
+         (resize)="onResize($event, data[4])"
+         [targetElement]="containerElements[4]"
+         [direction]="AngularResizeElementDirection.TOP_LEFT"
+    ></div>
+</resized-element>
+
+

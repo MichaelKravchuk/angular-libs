@@ -4,8 +4,6 @@ import {CommonModule} from '@angular/common';
 import {CoreComponent} from './core.component';
 import {CoreRoutingModule} from './core-routing.module';
 
-import {AngularResizeElementModule} from 'angular-resize-element';
-
 import {
     MatButtonModule,
     MatFormFieldModule,
@@ -23,6 +21,7 @@ import {
 
 import {AngularResizeElementComponent} from './angular-resize-element/angular-resize-element.component';
 import {ResizedElementComponent} from './angular-resize-element/resized-element/resized-element.component';
+import {AngularResizeElementModule} from '../../../projects/angular-resize-element/src/lib/angular-resize-element.module';
 
 @NgModule({
     declarations: [
@@ -45,7 +44,7 @@ import {ResizedElementComponent} from './angular-resize-element/resized-element/
         MatInputModule,
         MatRadioModule,
         MatPaginatorModule,
-        AngularResizeElementModule
+        AngularResizeElementModule,
     ]
 })
 export class CoreModule { }
