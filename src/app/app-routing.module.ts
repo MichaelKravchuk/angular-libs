@@ -5,7 +5,7 @@ import {StaticRoutingContract} from '@shared/constans';
 const routes: Routes = [
     {
         path: StaticRoutingContract.Core.ROOT,
-        loadChildren: './core/core.module#CoreModule',
+        loadChildren: () => import('./core/core.module').then(m => m.CoreModule),
         data: {preload: true, delay: 500}
     },
 ];
