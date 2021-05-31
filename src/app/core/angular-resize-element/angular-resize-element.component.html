@@ -1,5 +1,6 @@
 <resized-element class="resize-container top-left" [style.width.px]="data[0].width" [style.height.px]="data[0].height">
     <div class="resize resize__right"
+         [useDrag]="true"
          (resize)="onResize($event, data[0])"
          [targetElement]="containerElements[0]"
          [direction]="AngularResizeElementDirection.RIGHT"

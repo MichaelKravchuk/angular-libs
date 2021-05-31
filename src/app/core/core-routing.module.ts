@@ -1,9 +1,10 @@
-import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {StaticRoutingContract} from '@shared/constans';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { StaticRoutingContract } from '@shared/constans';
+import { AngularResizeElementComponent } from './angular-resize-element/angular-resize-element.component';
 
-import {CoreComponent} from './core.component';
-import {AngularResizeElementComponent} from './angular-resize-element/angular-resize-element.component';
+import { CoreComponent } from './core.component';
+import { CtDynamicFormComponent } from './ct-dynamic-form/ct-dynamic-form.component';
 
 const routes: Routes = [
     {
@@ -18,6 +19,10 @@ const routes: Routes = [
             {
                 path: StaticRoutingContract.Core.RESIZE_ELEMENT,
                 component: AngularResizeElementComponent
+            },
+            {
+                path: StaticRoutingContract.Core.DYNAMIC_FROM,
+                component: CtDynamicFormComponent
             }
         ]
     }
@@ -27,4 +32,5 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class CoreRoutingModule { }
+export class CoreRoutingModule {
+}

@@ -9,6 +9,7 @@
         "lint": "ng lint",
         "e2e": "ng e2e",
         "build:resize-element": "ng build angular-resize-element && npm run copy-assets:resize-element",
+        "build:move-element": "ng build angular-move-element",
         "copy-assets:resize-element": "cpx \"projects/angular-resize-element/assets/style.scss\" \"dist/angular-resize-element/bundles\""
     },
     "private": true,
