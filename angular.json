@@ -145,7 +145,7 @@
                     "builder": "@angular-devkit/build-ng-packagr:build",
                     "options": {
                         "tsConfig": "projects/angular-resize-element/tsconfig.lib.json",
-                        "project": "projects/angular-resize-element/ng-package.json"
+                        "project": "projects/angular-resize-element/ng-package.json",
                     }
                 },
                 "test": {
@@ -162,6 +162,76 @@
                         "tsConfig": [
                             "projects/angular-resize-element/tsconfig.lib.json",
                             "projects/angular-resize-element/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "angular-move-element": {
+            "projectType": "library",
+            "root": "projects/angular-move-element",
+            "sourceRoot": "projects/angular-move-element/src",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/angular-move-element/tsconfig.lib.json",
+                        "project": "projects/angular-move-element/ng-package.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/angular-move-element/src/test.ts",
+                        "tsConfig": "projects/angular-move-element/tsconfig.spec.json",
+                        "karmaConfig": "projects/angular-move-element/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/angular-move-element/tsconfig.lib.json",
+                            "projects/angular-move-element/tsconfig.spec.json"
+                        ],
+                        "exclude": [
+                            "**/node_modules/**"
+                        ]
+                    }
+                }
+            }
+        },
+        "ct-dynamic-form": {
+            "projectType": "library",
+            "root": "projects/ct-dynamic-form",
+            "sourceRoot": "projects/ct-dynamic-form/src",
+            "prefix": "lib",
+            "architect": {
+                "build": {
+                    "builder": "@angular-devkit/build-ng-packagr:build",
+                    "options": {
+                        "tsConfig": "projects/ct-dynamic-form/tsconfig.lib.json",
+                        "project": "projects/ct-dynamic-form/ng-package.json"
+                    }
+                },
+                "test": {
+                    "builder": "@angular-devkit/build-angular:karma",
+                    "options": {
+                        "main": "projects/ct-dynamic-form/src/test.ts",
+                        "tsConfig": "projects/ct-dynamic-form/tsconfig.spec.json",
+                        "karmaConfig": "projects/ct-dynamic-form/karma.conf.js"
+                    }
+                },
+                "lint": {
+                    "builder": "@angular-devkit/build-angular:tslint",
+                    "options": {
+                        "tsConfig": [
+                            "projects/ct-dynamic-form/tsconfig.lib.json",
+                            "projects/ct-dynamic-form/tsconfig.spec.json"
                         ],
                         "exclude": [
                             "**/node_modules/**"
