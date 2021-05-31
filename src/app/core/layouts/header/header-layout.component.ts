@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {MatDrawer} from '@angular/material';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
     selector: 'header-layout',

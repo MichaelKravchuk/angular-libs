@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {RoutingContract} from '@shared/constans';
-import {MatDrawer} from '@angular/material';
+import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
     selector: 'sidenav',
