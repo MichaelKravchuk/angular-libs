@@ -1,5 +1,8 @@
 {
   "compileOnSave": false,
+  "angularCompilerOptions": {
+    "enableIvy": false
+  },
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./docs/out-tsc",
@@ -39,6 +42,10 @@
       ],
       "ct-dynamic-form/*": [
         "dist/ct-dynamic-form/*"
+      ],
+      "spring-slider": [
+        "dist/spring-slider/spring-slider",
+        "dist/spring-slider"
       ]
     }
   }

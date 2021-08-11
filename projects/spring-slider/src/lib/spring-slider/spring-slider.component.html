@@ -1,0 +1,29 @@
+<div class="control" [class.control--vertical]="vertical" [class.control--disabled]="disabled">
+    <div class="control__label">
+        {{label}}
+    </div>
+    <div class="control__form-field underlined" (click)="openDialog.emit(null)" *ngIf="showValue">
+        <div class="slider-input no-gaped-unit">
+            {{innerValue | number: '1.2-2'}} <span class="degree-unit selected-input"> ° </span>
+        </div>
+    </div>
+
+    <div class="control__slider">
+        <div class="control__slider-wrapper" #sliderWrapperSelector>
+            <div class="control__slider__track">
+                <spring-slider-track [offsetWidth]="innerOffsetWidth"
+                                     [offsetHeight]="innerOffsetHeight"
+                                     [vertical]="vertical"
+                                     [sliderWrapper]="sliderWrapper"
+                                     (touchstart)="onTrackClick($event)"
+                ></spring-slider-track>
+            </div>
+            <div class="control__slider__thumb">
+                <div class="control__slider__thumb__handle"
+                     [style.transform]="getTransform()"
+                     (touchstart)="onMoveStart($event)"
+                ></div>
+            </div>
+        </div>
+    </div>
+</div>

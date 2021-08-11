@@ -5,6 +5,7 @@ import { AngularResizeElementComponent } from './angular-resize-element/angular-
 
 import { CoreComponent } from './core.component';
 import { CtDynamicFormComponent } from './ct-dynamic-form/ct-dynamic-form.component';
+import { SpringSliderComponent } from './spring-slider/spring-slider.component';
 
 const routes: Routes = [
     {
@@ -21,8 +22,8 @@ const routes: Routes = [
                 component: AngularResizeElementComponent
             },
             {
-                path: StaticRoutingContract.Core.DYNAMIC_FROM,
-                component: CtDynamicFormComponent
+                path: StaticRoutingContract.Core.SPRING_SLIDER,
+                component: SpringSliderComponent
             }
         ]
     }
